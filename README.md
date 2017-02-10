@@ -17,7 +17,8 @@ circleController.setElementReadable(false);
 circleController.buildElements();
 ```
 
-Example:
+## Example
+
 ![alt JavaFX Circle Example][exa]
 
 [exa]: http://wp12362127.server-he.de/github_space/example.png "JavaFX Circle Example"
