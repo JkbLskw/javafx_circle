@@ -2,6 +2,14 @@ package model;
 
 public class CircleElement<T> {
 	private T t;
+	private double initialX;
+	private double initialY;
+	private boolean moving;
+	private boolean selected;
+
+	public CircleElement() {
+		this.moving = false;
+	}
 
 	public T getT() {
 		return t;
@@ -9,6 +17,22 @@ public class CircleElement<T> {
 
 	public void setT(T newT) {
 		this.t = newT;
+	}
+
+	public void setMoving(boolean moving) {
+		this.moving = moving;
+	}
+
+	public boolean getMoving() {
+		return this.moving;
+	}
+
+	public boolean isSelected() {
+		return selected;
+	}
+
+	public void setSelected(boolean selected) {
+		this.selected = selected;
 	}
 
 	@Override
@@ -35,5 +59,21 @@ public class CircleElement<T> {
 		} else if (!t.equals(other.t))
 			return false;
 		return true;
+	}
+
+	public double getInitialX() {
+		return initialX;
+	}
+
+	public void setInitialX(double initialX) {
+		this.initialX = initialX;
+	}
+
+	public double getInitialY() {
+		return initialY;
+	}
+
+	public void setInitialY(double initialY) {
+		this.initialY = initialY;
 	}
 }
