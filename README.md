@@ -12,9 +12,11 @@ int circleRadius = 250;
 
 CircleController<Label> circleController = new CircleController<Label>(labelList, circlePane, circleRadius);
 
-circleController.setElementRotatable(true);
-circleController.setElementReadable(false);
-circleController.buildElements();
+cController.setElementMouseEvent(MouseEvent.MOUSE_CLICKED);
+cController.setElementSelectable(Selectable.NONE);
+cController.setElementRotatable(true);
+cController.setElementReadable(true);
+cController.buildElements();
 ```
 
 ## Example
