@@ -18,9 +18,3 @@ cController.setElementRotatable(true);
 cController.setElementReadable(true);
 cController.buildElements();
 ```
-
-## Example
-
-![alt JavaFX Circle Example][exa]
-
-[exa]: http://wp12362127.server-he.de/github_space/example.png "JavaFX Circle Example"
